@@ -1,0 +1,16 @@
+repositories {
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+mainClassName = 'com.tw.Game'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.0'
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
